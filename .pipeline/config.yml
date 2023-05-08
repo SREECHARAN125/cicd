@@ -19,7 +19,7 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: false
   Compliance:
-    sonarExecuteScan: false
+    sonarExecuteScan: true
   Release:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
