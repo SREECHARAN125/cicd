@@ -19,7 +19,12 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: false
   Compliance:
-    sonarExecuteScan: true
+    sonarExecuteScan: true 
+    serverUrl: "https://sonarcloud.io"                                                   
+    organization: "dev609"                                 
+    projectKey: "dev609"                                  
+    sonarTokenCredentialsId: "sonar"
+
   Release:
     cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
