@@ -14,7 +14,7 @@ build-parameters:
 
 modules:
   # ---------------- DATABASE DEPLOYER MODULE ------------------
-  - name: devdb-deployer
+  - name: devDB-deployer
   # ------------------------------------------------------------
     type: hdb
     path: gen/db
@@ -30,7 +30,7 @@ modules:
       disk-quota: 1024M
     requires:
       - name: cicd-uaa
-      - name: devdb
+      - name: devDB
 
 
   # --------------------- SERVER MODULE ------------------------
@@ -51,7 +51,7 @@ modules:
     requires:
       - name: cicd-uaa
       - name: cicd-dest
-      - name: devdb
+      - name: devDB
     provides:
       - name: srv-api
         properties:
@@ -111,7 +111,7 @@ resources:
 
 
   # ------------------- HDI CONTAINER SERVICE ------------------
-  - name: devdb
+  - name: devDB
   # ------------------------------------------------------------
     type: com.sap.xs.hdi-container
     parameters:
