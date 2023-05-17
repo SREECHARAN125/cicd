@@ -10,14 +10,14 @@ stages:
   Additional Unit Tests:
     npmExecuteScripts: false
   Acceptance:
-    cloudFoundryDeploy: false
+    cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "72af71a5trial"
     cfSpace: "dev"
     cfAppName: "cicd"
     cfCredentialsId: "deploy-to-cf"
     deployType: "standard"
-    npmExecuteEndToEndTests: false
+    npmExecuteEndToEndTests: true
   Compliance:
     sonarExecuteScan: true 
     serverUrl: "https://sonarcloud.io"                                                   
