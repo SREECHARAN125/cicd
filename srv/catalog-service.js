@@ -52,20 +52,6 @@ module.exports = cds.service.impl(async function () {
         }
     });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     this.on('userInfo', req => {
         let results = {};
         results.user = cds.context.user.id;
