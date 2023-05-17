@@ -3,6 +3,7 @@ general:
   buildTool: "mta"
   containerPortMappings : "[selenium/standalone-chrome:[[containerPort:4444, hostPort:4444]]]"
   dockerName : "buildTool = mta:mta"
+  dockerImage : "buildTool= mta:mta:mbtci:1.2.0"
   failOnError : true
 service:
   buildToolVersion: "MBTJ11N16" #see SAP Continuous Integration and Delivery service for more build tool version options
@@ -13,7 +14,7 @@ stages:
   Additional Unit Tests:
     npmExecuteScripts: false
   Acceptance:
-    cloudFoundryDeploy: true
+    cloudFoundryDeploy: false
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "72af71a5trial"
     cfSpace: "dev"
