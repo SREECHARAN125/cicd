@@ -1,9 +1,9 @@
 ---
 general:
-  buildTool: "mta"
+  buildTool: "npm"
   containerPortMappings : "[selenium/standalone-chrome:[[containerPort:4444, hostPort:4444]]]"
   dockerImage : "buildTool=npm:node:lts-buster"
-  dockerName : "buildTool=npm:npm"
+  #dockerName : "buildTool=npm:npm"
   #dockerWorkspace : "buildTool=npm:/home/node"
   #failOnError : true
 
