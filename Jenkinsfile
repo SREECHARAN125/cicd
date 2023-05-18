@@ -1,3 +1,6 @@
 @Library('piper-lib-os') _
 
-piperPipeline script: this
+//piperPipeline script: this
+
+karmaExecuteTests script: this
+

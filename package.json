@@ -8,17 +8,16 @@
     "node": "^16"
   },
   "dependencies": {
-    "@sap/cds": "^6.6",
-    "@sap/audit-logging": "^5",
-    "hdb": "^0.19",
-
     "@sap-cloud-sdk/http-client": "^2.5",
+    "@sap/audit-logging": "^5",
+    "@sap/cds": "^6.6",
     "@sap/xsenv": "^3",
     "@sap/xssec": "^3",
-    "passport": "^0.4.1",
-
     "debug": "^4.3",
-    "express": "^4"
+    "express": "^4",
+    "hdb": "^0.19",
+    "karma-webdriver-launcher": "^1.0.8",
+    "passport": "^0.6.0"
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.96.4"
@@ -84,19 +83,18 @@
             }
           }
         }
-      }
-      ,
+      },
       "db": {
         "[production]": {
-          "kind": "hana-cloud"
-          ,"model": [
+          "kind": "hana-cloud",
+          "model": [
             "db/data-config",
             "db/data-test"
           ]
         },
         "[development]": {
-          "kind": "sql"
-          ,"model": [
+          "kind": "sql",
+          "model": [
             "db/data-config",
             "db/data-test"
           ]
