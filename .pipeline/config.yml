@@ -1,7 +1,12 @@
 ---
 general:
   buildTool: "mta"
-  
+  containerPortMappings : "[selenium/standalone-chrome:[[containerPort:4444, hostPort:4444]]]"
+  dockerImage : "buildTool=npm:node:lts-buster"
+  dockerName : "buildTool=npm:npm"
+  dockerWorkspace : "buildTool=npm:/home/node"
+  failOnError : true
+
 service:
   buildToolVersion: "MBTJ11N16" #see SAP Continuous Integration and Delivery service for more build tool version options
 stages:
