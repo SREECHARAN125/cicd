@@ -1,6 +1,10 @@
 ---
 general:
   buildTool: "mta"
+  docker:
+  name: "maven"
+  image: "maven:3.5-jdk-8"
+
   
 service:
   buildToolVersion: "MBTJ11N16" #see SAP Continuous Integration and Delivery service for more build tool version options
