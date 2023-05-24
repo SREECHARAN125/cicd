@@ -4,6 +4,7 @@ general:
   docker:
   name: "maven"
   image: "maven:3.5-jdk-8"
+  pullImage : true
 
   
 service:
