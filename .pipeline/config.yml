@@ -4,6 +4,7 @@ general:
   docker:
   name: "maven"
   image: "maven:3.5-jdk-8"
+  pullImage : true
 
   
 service:
@@ -15,7 +16,7 @@ stages:
   Additional Unit Tests:
     npmExecuteScripts: false
   Acceptance:
-    cloudFoundryDeploy: false
+    cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "72af71a5trial"
     cfSpace: "dev"
