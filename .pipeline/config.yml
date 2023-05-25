@@ -48,5 +48,5 @@ steps:
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
   tmsUpload:
-    nodeName: "tmsqa"
+    nodeName: "qa"
     credentialsId: "tms-sk"
