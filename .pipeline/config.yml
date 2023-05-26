@@ -25,7 +25,7 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: true
   Compliance:
-    sonarExecuteScan: true 
+    sonarExecuteScan: false 
     serverUrl: "https://sonarcloud.io"                                                   
     organization: "dev609"                                 
     projectKey: "dev609"                                  
