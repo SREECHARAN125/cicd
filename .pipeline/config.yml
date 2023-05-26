@@ -1,10 +1,10 @@
 ---
 general:
   buildTool: "mta"
-  docker:
-  name: "maven"
-  image: "maven:3.5-jdk-8"
-  pullImage : true
+  #docker:
+  #name: "maven"
+  #image: "maven:3.5-jdk-8"
+  #pullImage : true
 
   
 service:
