@@ -25,7 +25,7 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: true
   Compliance:
-    sonarExecuteScan: false 
+    sonarExecuteScan: true 
     serverUrl: "https://sonarcloud.io"                                                   
     organization: "dev609"                                 
     projectKey: "dev609"                                  
@@ -39,7 +39,7 @@ stages:
     cfAppName: "cicd"
     cfCredentialsId: "cfdeploy"
     deployType: "standard"
-    tmsUpload: false
+    tmsUpload: true
 steps:
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
@@ -48,5 +48,5 @@ steps:
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
   tmsUpload:
-    nodeName: "qa1"
+    nodeName: "qa"
     credentialsId: "tms-sk"
