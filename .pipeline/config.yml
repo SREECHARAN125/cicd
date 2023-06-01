@@ -16,14 +16,14 @@ stages:
   Additional Unit Tests:
     npmExecuteScripts: false
   Acceptance:
-    cloudFoundryDeploy: false
+    cloudFoundryDeploy: true
     cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
     cfOrg: "72af71a5trial_dev2-v74czq1b"
     cfSpace: "dev2"
     cfAppName: "cicd"
     cfCredentialsId: "cfdeploy"
     deployType: "standard"
-    npmExecuteEndToEndTests: true
+    npmExecuteEndToEndTests: false
   Compliance:
     sonarExecuteScan: false 
     serverUrl: "https://sonarcloud.io"                                                   
@@ -48,5 +48,5 @@ steps:
   cloudFoundryDeploy:
     mtaDeployParameters: "-f --version-rule ALL"
   tmsUpload:
-    nodeName: "qa"
+    nodeName: "qanode"
     credentialsId: "tms-sk"
