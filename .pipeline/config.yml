@@ -27,8 +27,8 @@ stages:
   Compliance:
     sonarExecuteScan: true 
     serverUrl: "https://sonarcloud.io"                                                   
-    organization: "SREECHARAN125"                                 
-    projectKey: "cicd"                                  
+    organization: "dev609"                                 
+    projectKey: "dev609"                                  
     sonarTokenCredentialsId: "sonar"
 
   Release:
