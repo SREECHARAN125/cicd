@@ -25,7 +25,7 @@ stages:
     deployType: "standard"
     npmExecuteEndToEndTests: false
   Compliance:
-    sonarExecuteScan: false 
+    sonarExecuteScan: true 
     serverUrl: "https://sonarcloud.io"                                                   
     organization: "SREECHARAN125"                                 
     projectKey: "cicd"                                  
